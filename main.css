@@ -1,0 +1,69 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+.nav-logo{
+    height: 40px;
+    width: 40px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+.name{
+    position: absolute;
+    top:19px;
+    letter-spacing: 1px;
+    left: 130px;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 0;
+}
+a{
+    padding: 10px;
+    font-size: 20px;
+    text-decoration-line: none;
+    font-family: "Roboto Mono", monospace;
+    color: black;
+}
+.home{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(247, 241, 242);
+}
+.home-right{
+  width: 400px;
+  position: absolute;
+  top:190px;
+  left: 700px;
+}
+.home-left{
+    width: 50%;
+}
+img{
+    height: 350px;
+    width: 500px;
+}
+.soc-logo{
+    margin-left: 45%;
+}
+.social{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+

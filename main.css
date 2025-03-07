@@ -1,69 +1,252 @@
+body{
+    margin: 0;
+    background-color: black;
+}
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 80px;
+    position: sticky;
+    top: 20px;
+    margin: 0;
+    
 }
-.nav-logo{
-    height: 40px;
-    width: 40px;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-right: 50px;
+.nav-left p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    margin-left: 200px;
+}
+.nav-left p:hover{
+    font-size: 21px;
 }
 .nav-right{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 40px;
 }
-.name{
-    position: absolute;
-    top:19px;
-    letter-spacing: 1px;
-    left: 130px;
+.nav-right a{
+    color: white;
+    text-decoration: none;
+    padding-left: 40px;
+    transition: 0.4s ease;
+}
+.nav-right a:hover{
+    color: rgb(211,45,45);
+    text-decoration-line:underline;
+    text-decoration-color: rgb(211,45,45);
+    font-size: 20px; 
+}
+.nav-right a:active{
+    text-decoration-line:line-through;
+    text-decoration-color:white;
+    color: white;
     font-size: 20px;
-    font-weight: bold;
-    bottom: 0;
 }
-a{
-    padding: 10px;
-    font-size: 20px;
-    text-decoration-line: none;
-    font-family: "Roboto Mono", monospace;
-    color: black;
-}
-.home{
-    margin-top: 100px;
+.profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 50vh;
-    width: 100%;
-    background-color: rgb(247, 241, 242);
 }
-.home-right{
-  width: 400px;
-  position: absolute;
-  top:190px;
-  left: 700px;
+.pro-left{
+    width: 50%;
+    height: 100%;
+    color: white;
+    text-transform: capitalize;
+    font-size: 35px;
+    text-align: end;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    margin-top: 150px;
+    margin-right: 50px;
+    font-weight: bold;
 }
-.home-left{
+.pro-right{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 80px;
+}
+.pro-right img{
+    height: 400px;
+    width: 400px;
+    transition: 0.5s ease;
+}
+.pro-right img:hover{
+    border: 1px solid rgb(211, 45, 45);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(211, 45, 45);
+    opacity: 0.5;
+    height: 430px;
+    width: 430px;
+}
+.pro-left img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 2px;
+    transition: 0.2s ease;
+}
+.pro-left img:hover{
+    height: 35px;
+    width: 35px;
+}
+.pro-left a{
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid rgb(211,45,45);
+    font-size: 20px;
+    border-radius: 50px;  
+    transition: 0.5s ease;
+}
+.pro-left a:hover{
+    font-size: 25px;
+    background-color: white;
+    color: white;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-right{
+    margin-top: 300px;
+    width: 50%;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-right: 300px;
+    text-align: start;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.about-left{
     width: 50%;
 }
-img{
-    height: 350px;
-    width: 500px;
+.about img{
+    margin-top: 300px;
+    margin-left: 280px;
+    margin-bottom: 150px;
+    height: 300px;
+    width: 300px;
+    transition: 0.5s ease-out;
+    
 }
-.soc-logo{
-    margin-left: 45%;
+.about img:hover{
+    border: 1px solid rgb(211, 45, 45);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: rgb(211, 45, 45);
+    opacity: 0.5;
+
 }
-.social{
+.about-right a{
+    color: white; 
+    text-decoration: none; 
+    border: 1px solid rgb(211, 45, 45);
+    border-radius: 20px; 
+    background-color: rgb(211,45,45);
+    padding: 3px;
+    transition: 0.5s ease;
+}
+.about-right a:hover{
+    font-size: 22px;
+    opacity: 0.5;
+}
+.about-right a:active{
+    background-color: white;
+    color: black;
+}
+.services p{
+    color: white;
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.html{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(211, 45, 45);
+    padding-top: 70px;
+    background-color: rgb(211, 45, 45);
+    color: white;
+    transition: 1s ease;
+}
+.css{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(211, 45, 45);
+    padding-top: 70px;
+    background-color: rgb(211, 45, 45);
+    color: white;
+    transition: 1s ease;
+
+}
+.java{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid rgb(211, 45, 45);
+    padding-top: 70px;
+    background-color: rgb(211, 45, 45);
+    color: white;
+    transition: 0.5s ease;
+    
+
+}
+.html:hover{
+    background-color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.css:hover{
+    background-color: black;
+    font-size: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.java:hover{
+    background-color: black;
+    font-size: 20px;
+    padding-top: 0px;
+    border-radius: 20px;
+}
+.form{
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-bottom: 30%;
+}
+.form img{
+    margin-left: 20px;
+    display: inline;
+    padding: 10px;
     height: 50px;
     width: 50px;
-    padding: 10px;
+    transition: 0.5s ease;
 }
-
-
+.form img:hover{
+    height: 70px;
+    width: 70px;
+    border: 1px solid red;
+    border-radius: 50%;
+    background-color: white;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.pro-left p{
+    font-size: 20px;
+}
